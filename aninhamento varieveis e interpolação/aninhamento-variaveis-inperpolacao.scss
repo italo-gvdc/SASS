@@ -1,0 +1,16 @@
+/*aninhamento*/
+/* Referenciando seletor pai*/
+#conteudo {
+  background: green;
+  padding: 15px;
+  h1, h2 {
+    color: black;
+  }
+  a {
+    color: red;
+    &:hover {
+    color: yellow;
+  }
+  }
+  
+}
