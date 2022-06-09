@@ -39,3 +39,12 @@ $cor-padrao: red;
 h2 {
   color: $cor-padrao;
 }
+
+/* Interpolacao */
+$classe: red;
+$classe: vermelho;
+$color: color;
+
+.#{$classe} {
+  #{$color}: $classe;
+}
