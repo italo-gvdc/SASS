@@ -26,3 +26,16 @@ h2 {
 h3 {
   color: $cor-primaria;
 }
+
+/* Escopo Variáveis 
+(onde variável é reconhecida) 
+*/
+$cor-padrao: red;
+#rodape {
+  $cor-padrao: green !global;
+  background-color: $cor-padrao;
+}
+
+h2 {
+  color: $cor-padrao;
+}
