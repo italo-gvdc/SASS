@@ -30,3 +30,18 @@ $contador: 1;
   $contador: $contador + 1;
   
 }
+
+/* Funções */
+$total: 12;
+@function largura-coluna($coluna){
+  
+  @return percentage($coluna/$total);
+  
+}
+
+@for $i from 1 through $total {
+  .col-#{$i} {
+    width: largura-coluna($i) ;
+    background: green;
+  }
+}
