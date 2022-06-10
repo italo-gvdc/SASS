@@ -6,3 +6,13 @@
     margin-bottom:2px;
   }
 }
+
+/* while */
+$contador: 1;
+@while $contador < 5 {
+  .item-#{$contador} {
+    background: orange;
+    margin-bottom:2px;
+  }
+  $contador: $contador + 1;
+}
