@@ -16,3 +16,17 @@ $contador: 1;
   }
   $contador: $contador + 1;
 }
+
+/* each */
+$lista: green, yellow, red;
+$contador: 1;
+@each $cor in $lista {
+  
+  .item-#{$contador} {
+    background: $cor;
+    margin-bottom:2px;
+  }
+  
+  $contador: $contador + 1;
+  
+}
