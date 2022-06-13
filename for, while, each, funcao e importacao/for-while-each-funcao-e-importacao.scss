@@ -45,3 +45,14 @@ $total: 12;
     background: green;
   }
 }
+
+/*
+Outras Funções 
+mix(green,orange,50%)
+darken(orange,50%)
+lighten(orange,40%)
+*/
+.alerta {
+  background: lighten(orange,40%);
+  color: yellow;
+}
