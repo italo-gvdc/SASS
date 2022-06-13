@@ -1,0 +1,14 @@
+/*Mixin*/
+@mixin titulo($cor:white, $cor-bg:black) {
+  color: $cor;
+  background: $cor-bg;
+  padding: 10px 5px;
+}
+
+h1 {
+  @include titulo(green);
+}
+
+h2 {
+  @include titulo();
+}
