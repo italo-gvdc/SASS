@@ -25,3 +25,20 @@ h2 {
   @extend .classe1;
   @extend .classe2;
 }
+
+/*
+Encadeamento de diretivas
+Placeholders(%)
+*/
+%pai {
+  color: red;
+}
+%filho {
+  @extend %pai;
+  background: black;
+}
+.erro {
+  @extend %filho;
+  padding: 10px;
+  border:1px solid red;
+}
