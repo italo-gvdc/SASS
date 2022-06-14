@@ -42,3 +42,19 @@ Placeholders(%)
   padding: 10px;
   border:1px solid red;
 }
+
+/*Diretivas de controle*/
+$cor: yellow;
+@if($cor == green){
+  p{
+    color: $cor;
+  }
+}@else if($cor == red){
+  p{
+    color: $cor;
+  }
+}@else{
+  p{
+    color: black;
+  }
+}
